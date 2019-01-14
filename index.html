@@ -10,94 +10,352 @@
     <link rel="stylesheet" href="./styles/myStyle.css">
     <title>Document</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#main-nav" id="home">
 
-    <div class="container">
-        <header id="main-header">
-            <div class="row no-gutters">
-                <div class="col-lg-4 col-md-5">
-                    <img src="./images/mini van.jpg" alt="profile-picture">
-                </div>
-                <div class="col-lg-8 col-md-7">
-                    <div class="d-flex flex-column">
-                        <div class="p-5 bg-dark text-white">
-                            <div class="d-flex flex-row justify-content-between align-items-center">
-                                <h1 class="display-4">
-                                    Software development
-                                </h1>
-                                <div class="d-non d-md-block">
-                                    <a href="http://twitter.com" class="text-white">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="http://facebook.com" class="text-white">
-                                        <i class="fab fa-facebook"></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="http://instagram.com" class="text-white">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="http://github.com" class="text-white">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><i class="fas fa-address-card mr-1"></i>SoluviTion</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon">
+
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                        <a href="#explore-head-section" class="nav-link">Services</a>
+                    </li>
+                <li class="nav-item">
+                    <a href="#create-head-section" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#share-head-section" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#share-head-section" class="nav-link">About Us</a>
+                </li>
+            </div>
+            
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!--Home section-->
+
+    <header id="home-section">
+        <div class="dark-overlay ">
+            <div class="container home-inner">
+                <div class="row">
+                    <div class="col-lg-8 d-none d-lg-block">
+                        <h1 class="display-4 text-light">
+                            <br>
+
+                            <strong>SoluViTion</strong> ensure you a 
+                            <strong>fully-functioning</strong> and <strong>facinating web-sites</strong> on your demand
+                        </h1>
+
+                        <div class="d-flex">
+                            <div class="p-4 align-self-start">
+                                <i class="fas fa-check fa-2x"></i>
                             </div>
-                            
+                            <div class="p-4 align-self-end">
+                                Create your customized web-sites to enhance the performance
+        
+                            </div>   
                         </div>
-                        <div class="p4 text-dark bg-black">
-                                Experienced developers
+                        <div class="d-flex">
+                            <div class="p-4 align-self-start">
+                                <i class="fas fa-check fa-2x"></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                With over 6 years of experience, SoluViTion offers a diverse range of 
+                                knowledge that you can trust    
+                            </div>
+        
+                                
                         </div>
-                        <div>
-                                <div class="d-flex flex-row text-white align-items-stretch text-center">
-                                    <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
-                                        <i class="fas fa-home fa-2x d-block"></i>
-                                        <span class="d-none d-sm-block">
-                                            Home
-                                        </span>
-                                    </div>
+                        <div class="d-flex">
+                            <div class="p-4 align-self-start">
+                                <i class="fas fa-check fa-2x"></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                Everything You Need. And More.    
+                            </div>
+        
+                                
+                        </div>
 
-                                    <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#home">
-                                        <i class="fas fa-graduation-cap fa-2x d-block"></i>
-                                        <span class="d-none d-sm-block">
-                                            Resume
-                                        </span>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <br>
+                        <br>
+                        <br>
+                        <div class="card bg-primary text-center card-form">
+                            <div class="card-body">
+                                
+                                <h3>Sign up Today</h3>
+                                <p>Please fill out this form to register</p>
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-lg" placeholder="Username">
                                     </div>
-
-                                    <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#home">
-                                        <i class="fas fa-folder-open fa-2x d-block"></i>
-                                        <span class="d-none d-sm-block">
-                                            Work
-                                        </span>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-lg" placeholder="Email">
                                     </div>
-
-                                    <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#home">
-                                        <i class="fas fa-envelope fa-2x d-block"></i>
-                                        <span class="d-none d-sm-block">
-                                            Home
-                                        </span>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-lg" placeholder="Password">
                                     </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-lg" placeholder="Confirm Password">
+                                    </div>
+                                    <input type="submit" class="btn btn-outline-light btn-block">
+                                </form>
+                            </div>
                         </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    </header>
+<!--explore head-->
+    <section id="explore-head-section">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-5">
+                    <h1 class="display-4">Services</h1>
+                    <p class="lead">
+                        The Right Website For Your Organization Is Not an Extra It Is An Essential
+                    </p>
+                    <a href="#" class="btn btn-outline-secondary">Find Out More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--explore section-->
+
+    <section class="bg-light text-muted py-5" id="explore-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./images/services.gif" alt="" class="img-fluid mb-3">
+                </div>
+
+                <div class="col-md-8">
+                    <h3>World Class Web & Mobile Application Developed in Sri Lanka</h3>
+                    <p>It’s simply our passion! We excel in designing, development and implementing solutions for unique business operations where standard solutions become an expensive affair.</p>
+
+                    <div class="d-flex">
+                        <div class="p-4 align-self-start">
+                            <i class="fas fa-check fa-2x"></i>
                         </div>
+                        <div class="p-4 align-self-end">
+                            Listening closely, and communicating clearly to output you your exciting super smart web-sites that you always needed
+                        </div>   
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="p-4 align-self-start">
+                            <i class="fas fa-check fa-2x"></i>
+                        </div>
+                        <div class="p-4 align-self-end">
+                            The ability to accommodate modifications to maintain your newly commenced web site to make it up to date to attract 
+                            more and more traffic to your web site    
+                        </div>   
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Create head-->
+    <section id="create-head-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center py-5">
+                        <h1 class="display-4">Portfolio</h1>
+                        <p class="lead">We are every where</p>
+                        <a href="#" class="btn btn-outline-secondary">Find Out More</a>
                     </div>
                 </div>
             </div>
-        </header>
-    </div>
+        </section>
 
+        <!--Create section-->
 
+        <section class="bg-light text-muted py-5" id="create-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 order-2">
+                            <img src="./images/portfolio1.jpg" alt="" class="img-fluid mb-3">
+                        </div>
+        
+                        <div class="col-md-6 order-1">
+                            <img src="./images/portfolio2.jpg" alt="" class="img-fluid mb-3">
+        
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+    <!--Share head-->
+    <section id="share-head-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center py-5">
+                        <h1 class="display-4">Blog</h1>
+                        <p class="lead">
+                            Share and view with friends and others..     <h3>Express yourself ...</h3>
+                        </p>
+                        <a href="#" class="btn btn-outline-secondary">Share</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Share section-->
+    
+        <section class="bg-light text-muted py-5" id="share-section">
+            <div class="container">
+                
+                    
+    
+                    <div class="image-blog">
+                    
+                        <img src="./images/Share1.jpeg" alt="" class="img-fluid mb-3 ">
+    
+                    </div>
+                    <section class="button-blog">
+                        <a href="#" class="btn btn-secondary">Visit our blog ...</a>
+                    </section>
 
+                    
+                
+            </div>
+        </section>
+<!--footer-->
+        <footer class="bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center py-4">
+                        <h4><i class="fas fa-address-card mr-1"></i>SoluviTion</h4>
+                        <p>Copyright &copy;<span id="year"></span><img src="./images/Webp.net-resizeimage.png"></p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--contact model-->
+
+        <!--
+        <div class="modal fade text-dark" id="contactModal">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Us</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-block">Submit</button>
+                </div>
+            </div>
+        </div>
+    -->
+    <div class="modal fade text-dark" id="contactModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="model-title">Contact Us</h5>
+              <button class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" />
+                </div>
+  
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" />
+                </div>
+  
+                <div class="form-group">
+                  <label for="name">Message</label>
+                  <input type="text" class="form-control" />
+                </div>
+  
+                <div class="form-group">
+                  <label for="name">Message</label>
+                  <textarea class="form-control"></textarea>
+                </div>
+  
+                <div class="modal-footer">
+                  <button class="btn btn-primary btn-block">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     <script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-
+    <script>
+        $('#year').text(new Date().getFullYear());
+    
+        //init-scrollplay
+        $('body').scrollspy({target:'#main-nav'});
+        //smooth scrolling
+        $('#main-nav a').on('click',function(event){
+            if(this.hash!= ""){
+                event.preventDefault();
+                const hash=this.hash;
+                $('html, body').animate(
+                    {scrollTop:$(hash).offset().top},
+                    800,
+                    function(){
+                        window.location.hash=hash;
+                    }
+                );
+            }
+        });
+    </script>
 
 
 </body>
